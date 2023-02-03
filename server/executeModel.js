@@ -6,7 +6,7 @@ const executeModel = () => {
 
     return new Promise((resolve, reject) => {
         exec(
-            `python3 insights.py uploads/audioFile-1675449001988.wav`,
+            `python3 ../predictor/insights.py uploads/audioFile-1675449001988.wav`,
             (error, stdout, stderr) => {
                 error && reject({ error, stderr });
                 stderr && reject(stderr);
